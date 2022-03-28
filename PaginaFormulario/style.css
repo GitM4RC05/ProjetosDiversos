@@ -1,0 +1,574 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 910px;
+    background: url("/img/capa_pg_inscricao.jpg") center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
+    max-width:100%;
+}
+
+.main-child{
+ 
+    font-size: 16px;		
+    line-height: 24px;	
+    text-decoration: rgb(33, 37, 41);	
+    text-transform: uppercase;		
+
+    /* Color & Background */	
+
+    background-attachment: scroll;	
+    background-color: rgba(56, 42, 84, 0.4);	
+    background-image: none;	background-position: 0% 0%;	
+    background-repeat: repeat;	
+    color: rgb(249, 252, 255);
+
+    /* Box */	
+    height: 796.6px;	
+    width: 475px;	
+    margin-left: 1040px;
+    margin-bottom: 110px;
+    border-radius: 5%;
+    max-width: 100%;
+    max-height: 100%;
+
+    /* Effects */	
+    box-sizing: border-box;	
+    box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+}
+
+.main-child h1{
+    text-align: center;
+    margin-top: 200px;
+    
+    font-size: 50px;
+}
+
+.nome{
+    margin-top: 150px;
+    margin-left: 10px;
+    /*position*/
+   /*position: absolute*/
+   /*tentativa*/
+   position: absolute;
+  
+}
+
+.iconeEmail{
+    margin-right: 15px;
+    width: 40px;
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(241, 231, 231);
+}
+
+.inputNome{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 350px;
+    /*position*/
+
+}
+
+.email{
+    margin-top: 210px;
+    margin-left: 15px;
+   position: absolute;
+   color: white;
+}
+
+.InputEmail{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 350px;
+    /*position*/
+}
+
+
+
+.section01 {
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    height: 930px;
+    max-width:100%;
+}
+.section01-child {
+    font-size: 16px;		
+    line-height: 24px;	
+    text-decoration: rgb(33, 37, 41);	
+    text-transform: uppercase;		
+
+    /* Color & Background */	
+
+    background-attachment: scroll;	
+    background-color: rgba(56, 42, 84, 0.4);	
+    background-image: none;	background-position: 0% 0%;	
+    background-repeat: repeat;	
+    color: rgb(249, 252, 255);
+
+    /* Box */	
+    height: 796.6px;	
+    width: 475px;	
+    margin-left: 100px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    max-width: 100%;
+    max-height: 100%;
+
+    /* Effects */	
+    box-sizing: border-box;	
+    box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+}
+
+
+
+
+
+/*======================================================================================*/
+/* Botão */
+
+.button{
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: /*#4FD1C5*/ rgb(194, 57, 194);
+    background: linear-gradient(90deg, /*rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%)*/);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px /*rgba(79,209,197,.64*)*/;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    margin-top: 350px;
+    margin-left: 70px;
+    }
+    button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid /*#00FFCB*/rgb(194, 57, 194);;
+    box-shadow: 0 0 60px /*rgba(0,255,203,.64)*/rgb(194, 57, 194);;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+    }
+    .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+    }
+    button:hover::before, button:focus::before {
+    opacity: 1;
+    }
+    button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid /*#00FFCB*/ rgb(194, 57, 194);;  /*Efeito circular ao sair do botão*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring .5s infinite;
+    }
+    button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+    }
+    @keyframes ring {
+    0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    }
+    100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    }
+}
+
+/* fim botão */
+/*======================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* midia quary*/
+
+@media (max-width: 1540px){
+
+    .main{
+        height: 850px;
+        background: url("/img/capa_pg_inscricao.jpg") center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 800.6px;	
+        width: 505px;	
+        margin-left: 790px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+
+}
+
+@media (max-width: 1440px){
+
+    .main{
+        height: 820px;
+        background: url("/img/capa_pg_inscricao.jpg") center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 590.6px;	
+        width: 405px;	
+        margin-left: 790px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+
+}
+
+@media (max-width: 1306px){
+
+    .main{
+        height: 900px;
+        background: url("/img/capa_pg_inscricao.jpg") center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 880.6px;	
+        width: 505px;	
+        margin-left: 700px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+
+}
+
+@media (max-width: 1220px){
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 880.6px;	
+        width: 505px;	
+        margin-left: 640px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+
+}
+
+@media (max-width: 1150px){
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 880.6px;	
+        width: 505px;	
+        margin-left: 170px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 880.6px;	
+        width: 505px;	
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+        
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+
+}
+
+@media (max-width: 534px){
+
+    .main-child{
+ 
+        font-size: 16px;		
+        line-height: 24px;	
+        text-decoration: rgb(33, 37, 41);	
+        text-transform: uppercase;		
+    
+        /* Color & Background */	
+    
+        background-attachment: scroll;	
+        background-color: rgba(56, 42, 84, 0.4);	
+        background-image: none;	background-position: 0% 0%;	
+        background-repeat: repeat;	
+        color: rgb(249, 252, 255);
+    
+        /* Box */	
+        height: 780.6px;	
+        width: 325px;	
+        margin-left: 40px;
+        margin-bottom: 20px;
+        border-radius: 5%;
+        
+    
+        /* Effects */	
+        box-sizing: border-box;	
+        box-shadow: rgba(255, 207, 0, 0.3) 0px 8px 32px 0px;
+    }
+    
+    .main-child h1{
+        text-align: center;
+        margin-top: 200px;
+        text-decoration:underline;
+    }
+    
+
+.nome{
+    margin-top: 50px;
+    margin-left: 50px;
+    /*position*/
+   /*position: absolute*/
+
+   /*tentativa*/
+
+   position: absolute;
+  
+}
+
+
+.email{
+    margin-top: 90px;
+    margin-left: 50px;
+   position: absolute;
+
+   color: white;
+
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
